@@ -3,22 +3,32 @@
   <head>
     <title>Asteroids</title>
 
-    <style>
-      html, body, canvas {
-        padding: 0px;
-        margin: 0px;
-        background-color: rgb(9, 3, 22);
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
     <canvas></canvas>
+    <section class="dash">
+      <div class="Points">
+        Points:
+        <div class="points_num">
+          0
+        </div>
+      </div>
+
+      <div class="Shields">
+        Shields:
+        <div class="shields_num">
+          100%
+        </div>
+      </div>
+    </section>
 
     <script src="lib/util.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/asteroid.js"></script>
     <script src="lib/planet.js"></script>
+    <script src="lib/shield.js"></script>
     <script src="lib/bullet.js"></script>
     <script src="lib/ship.js"></script>
     <script src="lib/game.js"></script>
