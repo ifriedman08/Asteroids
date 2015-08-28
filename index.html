@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="Instructions">
-        <a href="#">Instructions</a>
+        <a class='instructions' href="#openModal">Instructions</a>
       </div>
       <div class="Points">
         Points:
@@ -25,9 +25,26 @@
       </div>
     </section>
     <section class="canvas-section">
-
       <canvas></canvas>
     </section>
+
+    <div id="openModal" class="modalDialog">
+      <div>	<a href="#close" title="Close" class="close">&times</a>
+        <h2>How to play:</h2>
+        <p>
+          Avoid the asteroids (the planets are safe).<br>
+          Pick up health packs to boost your shields.<br>
+          <br>
+          W: thrust up <br>
+          A: thrust left <br>
+          S: thrust down <br>
+          D: thrust right <br>
+          <br>
+          P: Shoot
+        </p>
+      </div>
+    </div>
+
 
     <script src="lib/util.js"></script>
     <script src="lib/jquery.js"></script>
