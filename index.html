@@ -4,27 +4,31 @@
     <title>Asteroids</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <canvas></canvas>
+
     <section class="dash">
+      <div class="Shields">
+        Shields:
+        <div class="shields-num">
+        </div>
+      </div>
       <div class="Points">
         Points:
-        <div class="points_num">
+        <div class="points-num">
           0
         </div>
       </div>
+    </section>
+    <section class="canvas-section">
 
-      <div class="Shields">
-        Shields:
-        <div class="shields_num">
-          100%
-        </div>
-      </div>
+      <canvas></canvas>
     </section>
 
     <script src="lib/util.js"></script>
+    <script src="lib/jquery.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/asteroid.js"></script>
     <script src="lib/planet.js"></script>
@@ -47,6 +51,10 @@
       });
 
       new Asteroids.GameView(game, canvasEl.getContext("2d")).start();
+
+      $(document).ready(function () {
+        $('canvas').click();
+      });
     </script>
   </body>
 </html>
