@@ -92,7 +92,6 @@ body {
 
  .modalDialog {
     position: fixed;
-    overflow: scroll;
     font-family: courier;
     top: 0;
     right: 0;
