@@ -26,9 +26,9 @@
     </section>
     <section class="canvas-section">
       <canvas> </canvas>
+      <button class="start-button">START!</button>
     </section>
 
-    <button class="start-button">START!</button>
 
     <div id="openModal" class="modalDialog">
       <div>	<a href="#close" title="Close" class="close">&times</a>
@@ -55,6 +55,7 @@
     <script src="lib/planet.js"></script>
     <script src="lib/shield.js"></script>
     <script src="lib/bullet.js"></script>
+    <script src="lib/explosion.js"></script>
     <script src="lib/ship.js"></script>
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
@@ -74,7 +75,8 @@
 
         $(event.currentTarget).remove()
         event.preventDefault();
-        new Asteroids.GameView(game, canvasEl.getContext("2d")).start();
+        window.currentGame = new Asteroids.GameView(game, canvasEl.getContext("2d"))
+        window.currentGame.start();
       })
 
       $(document).ready(function () {
