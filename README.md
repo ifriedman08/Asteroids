@@ -12,10 +12,8 @@ Shoot the asteroids to earn points, pick up healthpacks to replenish your shield
 ![instructions]
 
 ## Gameplay
-![gameplay1]
-![gameplay2]
+![gameplaygif]
 
 
 [instructions]: screenshots/instructions.png
-[gameplay1]: screenshots/gameplay1.png
-[gameplay2]: screenshots/gameplay2.png
+[gameplaygif]: screenshots/gameplay.gif
